@@ -27,3 +27,4 @@ Route::get('/', function () {
 #interrogacao (?) apos o atributo, consegue setar um valor padrão
 Route::get('/hello/{name?}','HelloController@index');
 Route::post('/hello/{name?}','HelloController@render');
+Route::Resource('pages','Admin\PagesController');
