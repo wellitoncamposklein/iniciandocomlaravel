@@ -25,6 +25,4 @@ Route::get('/', function () {
 });
 
 #interrogacao (?) apos o atributo, consegue setar um valor padrão
-Route::get('/hello/{name?}',function($name = 'world'){
-  return 'Hello '.$name;
-});
+Route::get('/hello/{name?}','HelloController@index');
